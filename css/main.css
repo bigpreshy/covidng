@@ -1,0 +1,42 @@
+body{
+  background-color: #16202A;
+}
+p, span, h3 {
+  color: black;
+  font-size: 20px;
+  background-color: yellow;
+  width: 160px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid gray;
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
