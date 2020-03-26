@@ -27,39 +27,31 @@ request.onload = function() {
 
       const p = document.createElement('p')
      data.cases = data.cases
-      p.textContent = `Total Confirmed  ${data.cases}`
+      p.textContent = `Total Confirmed:  ${data.cases}`
 
-     const span = document.createElement('span')
+     const h2 = document.createElement('h2')
      data.active = data.active
-      span.textContent = `Active Cases ${data.active}`
+      h2.textContent = `Active Cases: ${data.active}`
 
       const h3 = document.createElement('h3')
      data.recovered = data.recovered
-     h3.textContent = `Total Recovered  ${data.recovered}`
+     h3.textContent = `Total Recovered:  ${data.recovered}`
      
      // People wey die! mehn nobody go die againooo
      const h4 = document.createElement('h4')
      data.deaths = data.deaths
-     h4.textContent = `${data.deaths}`
+     h4.textContent = `Total Deaths: ${data.deaths}`
 
 
       container.appendChild(card)
       
       card.appendChild(p)
-      card.appendChild(span)
+      card.appendChild(h2)
       card.appendChild(h3)
       card.appendChild(h4)
 
-  console.log(data.country);
-  console.log(data.cases);
-  console.log(data.active);
-  console.log(data.todayCases);
-  console.log(data.recovered);
-  console.log(data.deaths);
 
 }
 
 
 request.send()
-
-
